@@ -25,7 +25,7 @@
             "pages": [
               "workflows/build-workflow",
               "workflows/passing-data",
-              "workflows/passing-data"
+              "workflows/publish-workflow"
          
             ]
           }
