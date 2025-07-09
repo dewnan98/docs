@@ -21,6 +21,17 @@
             ]
           },
           {
+            "group": "Built-in Nodes",
+            "pages": [
+              "built-in-nodes/trigger",
+              "built-in-nodes/apps",
+              "built-in-nodes/impresiv-ai",
+              "built-in-nodes/data-flow",
+              "built-in-nodes/data-tranformation",
+              "built-in-nodes/core"    
+            ]
+          },
+             {
             "group": "Workflows",
             "pages": [
               "workflows/build-workflow",

@@ -1,0 +1,85 @@
+---
+title: "Trigger"
+description: "The trigger node"
+---
+
+# ⏱️ Trigger Nodes
+
+Triggers are how a workflow starts. Impresiv supports multiple trigger types depending on your use case.
+
+---
+
+## 🔗 Webhook
+
+Start a flow when data is sent to a URL.
+
+- Method: `ALL METHOD SUPPORTED` 
+- Headers and body supported
+- URL is auto-generated when you create the node
+
+Use this when integrating with external systems or tools that send data.
+
+---
+
+## 🕒 Schedule
+
+Trigger your flow on a recurring basis.
+
+- Interval options: minutes, hourly, daily, weekly
+- Good for sync tasks, checks, or timed actions
+
+---
+
+## 🔌 Apps Trigger
+
+Start flows from external apps.
+
+Examples:
+
+- Incoming message from WhatsApp, Telegram, or Instagram
+- New row in Google Sheets
+- New subscriber in Mailchimp
+
+> Requires app integration to be connected first.
+
+---
+
+## 🧪 On Click (Test Only)
+
+Manual trigger for testing flows inside the builder.
+
+- Doesn’t expose a real endpoint
+- Use to test downstream nodes quickly
+
+---
+
+## 🔁 Trigger by Node
+
+Call a workflow from inside another workflow.
+
+- Acts like a function call
+- Pass data between flows
+- Great for modular flow design
+
+---
+
+## ❌ Error Trigger
+
+Start a flow when another one fails.
+
+- Gets error info, execution logs, and flow metadata
+- Useful for alerts, fallbacks, or auto-recovery flows
+
+---
+
+<CardGroup cols={2}>
+  <Card title="App Triggers" icon="plug" href="/built-in-nodes/apps">
+    Learn how to trigger flows from external apps
+  </Card>
+  <Card title="Build a Workflow" icon="flowchart" href="/workflows/building-workflow">
+    Start building with a trigger
+  </Card>
+  <Card title="Handle Errors" icon="alert-triangle" href="/built-in-nodes/core-function">
+    Use the error trigger with logic
+  </Card>
+</CardGroup>
