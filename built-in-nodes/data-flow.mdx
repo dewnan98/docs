@@ -1,4 +1,69 @@
 ---
-title: "Dataflow"
-description: "Description of your new file."
+title: "Data Flow"
+description: "Data flow nodes"
 ---
+
+# Data Flow Nodes
+
+Data flow nodes let you control how data moves through your workflow. Use them to add conditions, loops, filters, and routing logic.
+
+---
+
+## If
+
+Run one path if a condition is true, another if false.
+
+- Input: expression (e.g. `{{user.age}} > 18`)
+- Output: `true` or `false` branch
+- Supports numbers, strings, booleans, and nested variables
+
+---
+
+## Switch
+
+Route the flow based on a specific value.
+
+- Input: expression or variable (e.g. `{{user.type}}`)
+- Add multiple cases (e.g. `"admin"`, `"guest"`, `"member"`)
+- Includes default fallback if no case matches
+
+---
+
+## Loops
+
+Repeat steps for each item in a list.
+
+- Input: array (e.g. `{{items}}`)
+- Output: runs the child nodes once per item
+- Built-in variable: `{{loop.item}}` refers to the current item
+- Can also loop a fixed number of times or over last output
+
+Use this to send multiple messages, make batched API calls, or process each entry individually.
+
+---
+
+## Filter
+
+Only continue if data matches specific criteria.
+
+- Input: condition (e.g. `{{email}} contains "gmail.com"`)
+- Output: continues if true, skips if false
+- Often used right after a trigger to clean data before logic
+
+---
+
+<CardGroup>
+
+<Card title="Conditional Logic" icon="brackets-curly" href="/built-in-nodes/core-function">
+  Use with scripts and validators
+</Card>
+
+<Card title="Send Data to Apps" icon="plug" href="/built-in-nodes/apps">
+  Push filtered or looped data to external services
+</Card>
+
+<Card title="Use in Loops" icon="flowchart" href="/workflows/passing-data">
+  Pass and reference loop variables
+</Card>
+
+</CardGroup>

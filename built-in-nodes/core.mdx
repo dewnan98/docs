@@ -1,4 +1,93 @@
 ---
 title: "Core Function"
-description: "Description of your new file."
+description: "Core function node"
 ---
+
+# Core Function Nodes
+
+Core function nodes give you full control over execution, custom logic, and external communication.
+
+---
+
+## HTTP Request
+
+Send or receive data from any API.
+
+- Supports: `GET`, `POST`, `PUT`, `DELETE`, `PATCH`
+- Add headers, query params, body (JSON/form/raw)
+- Handle auth with bearer tokens, API keys, or custom headers
+- Returns full response: status, headers, body
+
+Use it to connect with services that don’t have a built-in node yet.
+
+---
+
+## Code (Script)
+
+Write custom JavaScript to process or transform data.
+
+- Access all incoming variables  
+- Return new data or handle logic directly  
+- Example: calculate values, reshape payloads, sanitize inputs
+
+Good for edge cases, inline logic, or mini utilities.
+
+---
+
+## Wait
+
+Pause the flow before continuing.
+
+- Set duration in seconds, minutes, hours  
+- Use for delays, throttling, or time-based logic  
+- Can be used between nodes or before actions
+
+---
+
+## Respond
+
+Send a custom response back to the trigger.
+
+- Use with Webhook or Execute Node  
+- Define status code, headers, body  
+- End the flow early if needed
+
+Example: return `{ "status": "ok" }` after a webhook is received and processed.
+
+---
+
+## Execute Node
+
+Call another workflow like a function.
+
+- Pass variables into the target workflow  
+- Waits for it to finish and returns result  
+- Helps modularize your logic (like reusable components)
+
+---
+
+## Extract Page from HTML
+
+Parse a full HTML page and extract content.
+
+- Input: raw HTML or URL  
+- Output: structured text, tables, meta tags, or specific selectors  
+- Use for scraping, summarizing, or analyzing web content
+
+---
+
+<CardGroup>
+
+<Card title="Use Script Logic" icon="brackets-curly" href="/built-in-nodes/data-transformation">
+  Add JS where transformations fall short
+</Card>
+
+<Card title="Trigger with Webhook" icon="alarm-clock" href="/built-in-nodes/trigger">
+  Use Respond node after external call
+</Card>
+
+<Card title="Reusable Flows" icon="flowchart" href="/workflows/building-workflow">
+  Call flows from other flows with Execute Node
+</Card>
+
+</CardGroup>

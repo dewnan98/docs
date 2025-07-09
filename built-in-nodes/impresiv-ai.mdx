@@ -2,3 +2,108 @@
 title: "Impresiv AI"
 description: "Description of your new file."
 ---
+# Impresiv AI Nodes
+
+Impresiv AI nodes allow you to generate content, analyze data, and build intelligent workflows using various AI models and tools.
+
+---
+
+## AI Agent
+
+Run multi-step agents that can reason, remember context, and perform tasks.
+
+- Configure system instructions, tools, and memory settings
+- Ideal for assistants, multi-turn bots, or autonomous flows
+- Optionally connect to other tools like API calls, search, or function nodes
+
+---
+
+## Generate Image
+
+Create images from text prompts using providers like DALL·E or Stability.
+
+- Inputs: prompt, resolution, style (optional)
+- Outputs: image URL or base64
+- Use cases: content creation, visuals, mockups
+
+---
+
+## Generate Video
+
+Produce short videos from text descriptions or prompts.
+
+- Input: text prompt or script
+- Output: video file (URL)
+- Ideal for social content, intros, explainers
+
+---
+
+## Transcribe Audio
+
+Convert spoken audio into text using models like Whisper.
+
+- Input: audio file (upload or URL)
+- Output: full transcription
+- Supports formats like MP3, WAV, M4A
+
+---
+
+## Content Moderation
+
+Automatically flag unsafe or inappropriate content.
+
+- Categories: violence, hate, sexual content, self-harm, etc.
+- Output: boolean flag + category list
+- Useful for user-generated content or input filtering
+
+---
+
+## Text Classifier
+
+Label text with a predefined set of categories.
+
+- Input: plain text
+- Output: predicted category
+- Good for routing, intent detection, auto-tagging
+
+---
+
+## Sentiment Analysis
+
+Analyze the tone of a message.
+
+- Output: sentiment label (positive, neutral, negative)
+- Also returns confidence score
+- Common use cases: customer feedback, response filtering
+
+---
+
+## Agent Tools
+
+Enhance your AI agents with tools that allow real-time actions and context:
+
+- Web Search  
+- API Call  
+- Function Execution  
+- Long-Term Memory
+
+Configure tools inside the AI Agent node’s settings.
+
+---
+
+<CardGroup>
+
+<Card title="Build AI Flows" icon="flowchart" href="/workflows/building-workflow">
+  Add AI logic to your workflows
+</Card>
+
+<Card title="Connect Apps" icon="plug" href="/built-in-nodes/apps">
+  Send AI output to external services
+</Card>
+
+<Card title="Use Core Nodes" icon="brackets-curly" href="/built-in-nodes/core-function">
+  Combine AI with logic and control nodes
+</Card>
+
+</CardGroup>
+

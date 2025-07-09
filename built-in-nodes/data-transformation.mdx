@@ -1,4 +1,83 @@
 ---
 title: "Data Transformation"
-description: "Description of your new file."
+description: "Data tranformation node."
 ---
+
+# Data Transformation Nodes
+
+Use transformation nodes to modify, format, or compute values inside your flow — without writing full scripts.
+
+---
+
+## Math
+
+Perform calculations on numbers.
+
+- Supported: `+`, `-`, `*`, `/`, `%`, `^`, rounding, min/max
+- Example: `{{price}} * 1.1`, `Math.round({{value}})`
+
+---
+
+## String
+
+Modify or extract text.
+
+- Operations: `split`, `join`, `replace`, `substring`, `toLowerCase`, `trim`
+- Example: `{{text}}.toLowerCase().trim()`
+
+---
+
+## Array
+
+Work with lists of values.
+
+- Operations: `map`, `filter`, `reduce`, `length`, `includes`, `indexOf`
+- Example: `{{items.length}}`, `{{items.map(x => x.name)}}`
+
+---
+
+## Object
+
+Read or shape object data.
+
+- Access nested fields: `{{user.profile.name}}`
+- Restructure or flatten keys
+- Merge objects or remove null/undefined fields
+
+---
+
+## Date
+
+Parse, format, and compare dates.
+
+- Format: `YYYY-MM-DD`, `HH:mm:ss`, ISO strings
+- Functions: `now`, `add`, `subtract`, `diff`, `format`
+- Example: `{{date}}.add(2, 'days')`, `now().format("YYYY-MM-DD")`
+
+---
+
+## Crypto
+
+Use basic cryptographic utilities.
+
+- Hashing: `SHA256`, `MD5`, `bcrypt`
+- Encoding: `base64`, `hex`
+- Useful for signatures, password handling, and IDs
+
+---
+
+<CardGroup>
+
+<Card title="Script Logic" icon="brackets-curly" href="/built-in-nodes/core-function">
+  For custom JS-based logic
+</Card>
+
+<Card title="Pass Data" icon="arrow-right" href="/workflows/passing-data">
+  Use transformed values downstream
+</Card>
+
+<Card title="Filter/Loop" icon="flowchart" href="/built-in-nodes/data-flow">
+  Combine with control nodes
+</Card>
+
+</CardGroup>
