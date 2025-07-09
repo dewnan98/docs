@@ -1,0 +1,44 @@
+---
+title: 'New file'
+description: 'Description of your new file.'
+---
+
+# 🔄 Passing Data Between Nodes
+
+Each node in Impresiv outputs data. You can use that data in any connected node with `{{ }}`.
+
+---
+
+## 🧠 How It Works
+
+- Output from one node becomes input for the next  
+- Use `{{variable}}` to reference any field  
+- Data preview is built-in
+
+```text
+Example:
+{{trigger.email}} → sends to next node
+⚙️ Use Cases
+Inject values into API URLs or JSON bodies
+
+Fill AI prompts with dynamic data
+
+Add conditions: {{user.age}} > 18
+
+## 🎥 Visual Example
+
+Here’s a quick look at how data is passed from one node to another:
+
+![Passing data between nodes](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ25wNzhmNnB2bGU3YjF6cHd2ZmYybDFqMWNka3RvcTB5bzE0OWc0YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y2b4JtvWKu7Xsc0lQs/giphy.gif)
+
+> 🟡 Replace this GIF URL with your own later  
+> Suggested size: **600x300px**, short loop under 10 seconds
+
+✅ Tips
+Use the {} button to see available variables
+
+Rename nodes so references are easy ({{step1.email}})
+
+Transform data if needed using the script node
+
+<CardGroup> <Card title="Build a Workflow" icon="layout-grid" href="/workflows/building-workflow"> Go back to building flows </Card> <Card title="Publish Workflow" icon="rocket" href="/workflows/publishing-workflow"> Make your flow live </Card> <Card title="Use Scripts" icon="terminal" href="/scripting"> Write custom logic </Card> </CardGroup> ```
