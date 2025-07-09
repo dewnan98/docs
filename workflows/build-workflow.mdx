@@ -1,0 +1,102 @@
+---
+title: "New file"
+description: "Description of your new file."
+---
+
+ # 🛠️ Building a Workflow
+
+Workflows in Impresiv are built visually using a node-based flow editor. You can connect triggers, logic, actions, and AI to create powerful automations in minutes.
+
+---
+
+## 1. Create a New Workflow
+
+Go to your [Dashboard](https://impresivai.com/dashboard) and click **“New Flow”**.
+
+Give your workflow a name and optionally a description to help you (or your team) understand its purpose later.
+
+---
+
+## 2. Add a Trigger
+
+A trigger starts the flow. You can choose from:
+
+- **Webhook** — responds to external HTTP calls  
+- **Schedule** — runs on intervals (e.g. hourly, daily)  
+- **Form Input** — waits for user input from a form or chat interface  
+- **Manual** — for internal testing or utility flows  
+
+Configure the trigger based on your use case — for example, for a webhook you’ll get a generated URL that listens for POST requests.
+
+---
+
+## 3. Drag in Nodes
+
+Once a trigger is set, drag in new **nodes** to build your logic.
+
+Common node types:
+
+- **API Request** — make external HTTP calls  
+- **AI Action** — prompt LLMs like OpenAI or Claude  
+- **Condition** — apply if/else branching logic  
+- **Transform** — modify data before passing it to the next step  
+- **Output** — return a value or send a message
+
+You can add, connect, and rearrange nodes freely using the visual editor.
+
+---
+
+## 4. Configure Each Node
+
+Click on a node to configure its:
+
+- **Inputs** — values passed from previous nodes or from the trigger  
+- **Logic or Prompt** — for AI and script nodes  
+- **Headers / Params / Payload** — for API requests  
+- **Output Variables** — values that can be reused downstream
+
+Use **dynamic data references** (`{{ }}`) to pull in outputs from earlier steps.
+
+<Note>
+You can preview what data is available by hovering over the connecting lines or using the variable selector in the input fields.
+</Note>
+
+---
+
+## 5. Test the Workflow
+
+Click **Run** to test your workflow end-to-end.
+
+You’ll see step-by-step execution logs and output values for every node.  
+You can make changes and re-run until everything looks good.
+
+---
+
+## 6. Save Progress
+
+Impresiv auto-saves your flow as you build.  
+You can always come back later and continue where you left off.
+
+To make your flow available for triggering (webhook, schedule, etc), you’ll need to **Publish** it — we’ll cover that in the next section.
+
+---
+
+<CardGroup>
+
+<Card title="Passing Data" icon="arrow-right" href="/workflows/passing-data">
+  Learn how to pass and transform data between nodes.
+</Card>
+
+<Card title="Publishing Workflows" icon="rocket" href="/workflows/publishing-workflow">
+  Make your flow live so it runs on triggers.
+</Card>
+
+<Card title="Triggers & Inputs" icon="alarm-clock" href="/triggers">
+  Learn more about available trigger types.
+</Card>
+
+<Card title="AI in Workflows" icon="bot" href="/ai">
+  Add intelligence to any step using AI actions.
+</Card>
+
+</CardGroup>
