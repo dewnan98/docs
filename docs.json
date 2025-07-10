@@ -94,7 +94,7 @@
         }
       ]
     },
-    "navbar": {
+  "navbar": {
     "links": [
       {
         "label": "Community",
@@ -102,7 +102,7 @@
         "icon": "discord"
       }
     ]
-  },
+  }
     
   },
   "logo": {
