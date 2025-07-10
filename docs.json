@@ -3,7 +3,7 @@
   "theme": "willow",
   "name": "Impresiv",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#813dd9",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -27,6 +27,17 @@
               "workflows/passing-data",
               "workflows/publish-workflow"
          
+            ]
+          },
+                    {
+            "group": "Built-in Nodes",
+            "pages": [
+              "built-in-nodes/trigger",
+              "built-in-nodes/apps",
+              "built-in-nodes/impresiv-ai",
+              "built-in-nodes/data-flow",
+              "built-in-nodes/data-transformation",
+              "built-in-nodes/core"
             ]
           }
         ]
