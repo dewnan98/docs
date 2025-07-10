@@ -93,7 +93,17 @@
           "icon": "discord"
         }
       ]
-    }
+    },
+    "navbar": {
+    "links": [
+      {
+        "label": "Community",
+        "href": "https://discord.gg/H2vxsUkywr",
+        "icon": "discord"
+      }
+    ]
+  },
+    
   },
   "logo": {
     "light": "/logo/light.svg",
