@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Introduction",
         "groups": [
           {
             "group": "Get Started",
@@ -26,17 +26,7 @@
               "workflows/build-workflow",
               "workflows/passing-data",
               "workflows/publish-workflow"
-            ]
-          },
-          {
-            "group": "Built-in Nodes",
-            "pages": [
-              "built-in-nodes/trigger",
-              "built-in-nodes/apps",
-              "built-in-nodes/impresiv-ai",
-              "built-in-nodes/data-flow",
-              "built-in-nodes/data-tranformation",
-              "built-in-nodes/core"    
+         
             ]
           }
         ]
@@ -111,8 +101,9 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/H2vxsUkywr",
-      "instagram": "https://www.instagram.com/impresivai"
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
 }
