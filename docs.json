@@ -26,10 +26,9 @@
               "workflows/build-workflow",
               "workflows/passing-data",
               "workflows/publish-workflow"
-         
             ]
           },
-                    {
+          {
             "group": "Built-in Nodes",
             "pages": [
               "built-in-nodes/trigger",
@@ -38,8 +37,6 @@
               "built-in-nodes/data-flow",
               "built-in-nodes/data-transformation",
               "built-in-nodes/core"
-              
-         
             ]
           }
         ]
@@ -64,7 +61,7 @@
           }
         ]
       },
-         {
+      {
         "tab": "MCP",
         "groups": [
           {
@@ -93,27 +90,18 @@
           "icon": "discord"
         }
       ]
-    },
-  "navbar": {
-    "links": [
-      {
-        "label": "Community",
-        "href": "https://discord.gg/H2vxsUkywr",
-        "icon": "discord"
-      }
-    ]
-  }
-    
-  },
-  "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
+    }
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
         "href": "mailto:support@impresivai.com"
+      },
+      {
+        "label": "Community",
+        "href": "https://discord.gg/H2vxsUkywr",
+        "icon": "discord"
       }
     ],
     "primary": {
@@ -122,11 +110,14 @@
       "href": "https://impresivai.com/dashboard"
     }
   },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.gg/H2vxsUkywr",
+      "instagram": "https://instagram.com/impresivai"
     }
   }
 }
