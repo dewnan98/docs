@@ -32,11 +32,11 @@
             "group": "Built-in Nodes",
             "pages": [
               "built-in-nodes/trigger",
-              "built-in-nodes/apps",
               "built-in-nodes/impresiv-ai",
+              "built-in-nodes/core",
               "built-in-nodes/data-flow",
               "built-in-nodes/data-transformation",
-              "built-in-nodes/core"
+              "built-in-nodes/apps"
             ]
           }
         ]
