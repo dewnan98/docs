@@ -81,16 +81,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Community",
-          "href": "https://discord.gg/H2vxsUkywr",
-          "icon": "discord"
-        }
-      ]
-    }
+    ]
   },
   "navbar": {
     "links": [
