@@ -13,16 +13,17 @@ App Actions let you send data to external services like WhatsApp, Telegram, Goog
 
 Send messages to users across multiple platforms.
 
-- **WhatsApp**  
-  → Send text, images, buttons  
-- **Telegram**  
-  → Send messages to channels, groups, or users  
-- **Instagram DM (Business)**  
+- **WhatsApp**\
+  → Send text, images, buttons
+- **Telegram**\
+  → Send messages to channels, groups, or users
+- **Instagram DM (Business)**\
   → Send replies to conversations
 
 Use cases:
-- Auto-reply bots  
-- AI chat assistants  
+
+- Auto-reply bots
+- AI chat assistants
 - Customer service automation
 
 ---
@@ -31,16 +32,17 @@ Use cases:
 
 Update records, spreadsheets, or CRMs.
 
-- **Google Sheets**  
-  → Add new rows, update cells  
-- **Airtable / Notion**  
-  → Create or modify entries  
-- **Webform APIs**  
+- **Google Sheets**\
+  → Add new rows, update cells
+- **Airtable / Notion**\
+  → Create or modify entries
+- **Webform APIs**\
   → Send collected data to endpoints
 
 Use cases:
-- Log lead data  
-- Save AI output  
+
+- Log lead data
+- Save AI output
 - Generate reports
 
 ---
@@ -49,15 +51,16 @@ Use cases:
 
 Notify users or teams via other platforms.
 
-- **Email (SMTP, Mailgun, Sendinblue)**  
-  → Send emails with custom content  
-- **Slack / Discord**  
-  → Post messages or alerts  
+- **Email (SMTP, Mailgun, Sendinblue)**\
+  → Send emails with custom content
+- **Slack / Discord**\
+  → Post messages or alerts
 - **Push Notifications (OneSignal, etc.)**
 
 Use cases:
-- Alert on specific conditions  
-- Notify human reviewers  
+
+- Alert on specific conditions
+- Notify human reviewers
 - Escalate failed flows
 
 ---
@@ -66,8 +69,8 @@ Use cases:
 
 If an app doesn’t exist yet, you can still connect to it using:
 
-- **HTTP Request Node**  
-- Add base URL, headers, and payload  
+- **HTTP Request Node**
+- Add base URL, headers, and payload
 - Auth options: API key, bearer token, etc.
 
 This gives you full flexibility to talk to any REST API.
@@ -76,10 +79,10 @@ This gives you full flexibility to talk to any REST API.
 
 ## 🛠 How to Use
 
-1. Drag an **App Action** node after your logic  
-2. Select an app and action (e.g. “Send WhatsApp Message”)  
-3. Connect your account  
-4. Map fields using dynamic variables (`{{ }}`)  
+1. Drag an **App Action** node after your logic
+2. Select an app and action (e.g. “Send WhatsApp Message”)
+3. Connect your account
+4. Map fields using dynamic variables (`{{ }}`)
 5. Save & run to test
 
 ---
@@ -88,24 +91,8 @@ This gives you full flexibility to talk to any REST API.
 
 You only need to connect each app once.
 
-- Go to **Dashboard > Connected Apps**  
-- Remove or reconnect anytime  
+- Go to **Dashboard \> Connected Apps**
+- Remove or reconnect anytime
 - Credentials are encrypted by default
 
 ---
-
-<CardGroup>
-
-<Card title="AI Output to WhatsApp" icon="bot" href="/ai">
-  Use AI to generate replies, then send them to users
-</Card>
-
-<Card title="Send Data to Sheets" icon="file-text" href="/built-in-nodes/data-flow">
-  Pipe flow output into Google Sheets
-</Card>
-
-<Card title="Use API Requests" icon="link" href="/built-in-nodes/core-function">
-  Make direct calls to unsupported services
-</Card>
-
-</CardGroup>
